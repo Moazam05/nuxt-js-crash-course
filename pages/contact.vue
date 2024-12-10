@@ -1,9 +1,8 @@
-<script></script>
+<script setup></script>
 
 <template>
   <div>
-    <Navbar />
-    <slot />
+    <h1>Contact</h1>
   </div>
 </template>
 
