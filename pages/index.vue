@@ -1,7 +1,9 @@
 <script setup></script>
 
 <template>
-  <div>This is home page</div>
+  <div v-for="n in 5" class="my-8">
+    <PostCard />
+  </div>
 </template>
 
 <style scoped></style>
