@@ -1,7 +1,7 @@
 <script></script>
 
 <template>
-  <div>
+  <div class="bg-gray-900">
     <Navbar />
     <slot />
   </div>
