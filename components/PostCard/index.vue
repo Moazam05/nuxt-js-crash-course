@@ -1,12 +1,7 @@
 <script setup>
-import { truncateDescription } from "../../utils/index.js";
+defineProps(["id", "title", "body"]);
 
-// Mock post data
-const post = {
-  id: 1,
-  title: "Post Title",
-  body: "This is a longer post body that demonstrates the truncation functionality.",
-};
+import { truncateDescription } from "../../utils/index.js";
 </script>
 
 <template>
@@ -24,12 +19,12 @@ const post = {
 
     <!-- Post Content -->
     <div class="w-full md:w-2/3 px-6 py-4">
-      <h2 class="text-2xl font-bold mb-2 text-white">{{ post?.title }}</h2>
+      <h2 class="text-2xl font-bold mb-2 text-white">{{ title }}</h2>
       <p class="text-white text-base mb-4">
-        {{ truncateDescription(post?.body, 5) }}
+        {{ truncateDescription(body, 40) }}
       </p>
       <NuxtLink
-        :to="`/posts/${post?.id}`"
+        :to="`/posts/${id}`"
         class="bg-slate-500 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded"
       >
         Read More
