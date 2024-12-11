@@ -1,8 +1,12 @@
-<script setup></script>
+<script setup>
+definePageMeta({
+  layout: "custom",
+});
+</script>
 
 <template>
   <div>
-    <h1>ID Page</h1>
+    <PostDetail />
   </div>
 </template>
 
