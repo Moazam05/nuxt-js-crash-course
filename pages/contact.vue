@@ -2,6 +2,10 @@
 definePageMeta({
   layout: "custom",
 });
+
+useHead({
+  title: "Contact Us",
+});
 </script>
 
 <template>

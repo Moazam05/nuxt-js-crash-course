@@ -2,6 +2,10 @@
 const { data, error, pending } = useLazyFetch(
   "https://dummyjson.com/posts?limit=10"
 );
+
+useHead({
+  title: "Home",
+});
 </script>
 
 <template>

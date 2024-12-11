@@ -2,6 +2,10 @@
 definePageMeta({
   layout: "custom",
 });
+
+useHead({
+  title: "About Us",
+});
 </script>
 
 <template>
